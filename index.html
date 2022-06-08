@@ -4,29 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Weather App</title>
 </head>
 <body>
 
-    <header>
-        <div id="header" class="header">
+    <header id="header" class="header">
             <h1 id="title" class="h1">Weather Dashboard</h1>
-        </div>
     </header>
 
     <main>
-        <div id="search" class="search">
-            <p>Search for a City:</p>
+        <div id="search" class="search col-3">
+            <div id="active-search" class="active-search">
+                <h2>Search for a City:</h2>
         
-            <input id="city-search" class="city-search" type="text" placeholder="New York"></input>
+                <input id="city-search" class="city-search" type="text" placeholder="New York"></input> </br>
 
-            <button id="search-submit" class="button search-button" type="submit"></button>
+                <button id="search-button" class="button search-button" type="submit">Search</button> </br>
+            </div>
+
+            <div id="past-search" class="past-search">
+                <button id="search-history-1" class="button search-history hide" type="submit"></button> </br>
+                <button id="search-history-2" class="button search-history hide" type="submit"></button> </br>
+                <button id="search-history-3" class="button search-history hide" type="submit"></button> </br>
+                <button id="search-history-4" class="button search-history hide" type="submit"></button> </br>
+                <button id="search-history-5" class="button search-history hide" type="submit"></button>
+            </div>
         </div>
 
-        <div id="present-weather" class="present-weather"></div>
+        <div id="weather" class="weather col-9">
+            <div id="present-weather" class="present-weather"></div>
 
-        <div id="five-day" class="five-day"></div>
+            <div id="five-day" class="five-day"></div>
+        </div>
     </main>
 
     <script src="./assets/js/script.js"></script>
