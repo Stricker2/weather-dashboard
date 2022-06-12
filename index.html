@@ -19,7 +19,7 @@
             <div id="active-search" class="active-search">
                 <h2>Search for a City:</h2>
         
-                <input id="city-search" class="city-search" type="text" value="New York"></input> </br>
+                <input id="city-search" class="city-search" type="text"></input> </br>
 
                 <button id="search-button" class="button search-button" type="submit">Search</button> </br>
             </div>
@@ -34,7 +34,13 @@
         </div>
 
         <div id="weather" class="weather col-9">
-            <div id="present-weather" class="present-weather"></div>
+            <div id="present-weather" class="present-weather">
+                <img id="weather-icon" src="" />
+                <p id="city-name"></p>
+                <p id="current-temp"></p>
+                <p>High:<span id="high-temp"></span></p>
+                <p>Low:<span id="low-temp"></span></p>
+            </div>
 
             <div id="five-day" class="five-day"></div>
         </div>
