@@ -37,8 +37,9 @@
             <div id="present-weather" class="present-weather">
                 <div class="temperature">
                     <img id="weather-icon" src="" />
-                    <p id="city-name"></p>
-                    <p id="current-temp"></p>
+                    <h2 id="city-name"></h2>
+                    <h3 id="current-date"></h3>
+                    <h4 id="current-temp"></h4> <br>
                     <p>High:<span id="high-temp"></span></p>
                     <p>Low:<span id="low-temp"></span></p>
                 </div>
@@ -49,7 +50,15 @@
                 </div>
             </div>
 
-            <div id="five-day" class="five-day"></div>
+            <div id="five-day" class="five-day hide">
+                <div id="forecast-container">
+                    <p id="next-day"></p>
+                    <img id="weather-icon" src="" />
+                    <p id="average-temp"></p>
+                    <p>Wind Speed:<span id="wind-speed"></span></p>
+                    <p>Humidity:<span id="humidity"></span></p>
+                </div>
+            </div>
         </div>
     </main>
 

@@ -51,6 +51,14 @@ main {
 
 }
 
+.temperature {
+    margin: 5px;
+}
+
+.misc-data {
+    margin: 5px;
+}
+
 .hide {
     display: none;
 }
